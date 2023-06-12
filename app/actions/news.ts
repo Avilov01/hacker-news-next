@@ -19,5 +19,5 @@ export async function getAllNews(): Promise<TNews[]> {
     res.json()
   );
 
-  return await Promise.all(ids.slice(0, 100).map(getNewsItem<TNews>));
+  return await Promise.all(ids.slice(0, 50).map(getNewsItem<TNews>));
 }
