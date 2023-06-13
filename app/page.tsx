@@ -7,7 +7,7 @@ export const metadata = {
   description: 'All news'
 };
 
-export const revalidate = 60;
+export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const news = await getAllNews();
